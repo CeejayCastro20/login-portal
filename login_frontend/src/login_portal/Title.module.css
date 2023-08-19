@@ -1,0 +1,118 @@
+.container {
+    background-color: white;
+}
+
+.con {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    float: left;
+    background-color: white;
+    background-image: url('../images/left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1024px;
+    width: 616px;
+    border: 0px solid transparent;
+}
+
+.left1 {
+    margin-left: 70px;
+    margin-top: 200px;
+}
+
+.above {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    width: 616px;
+    height: 39px;
+}
+
+.above img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.above h6 {
+    margin-right: 240px;
+    font-size: 13.6px;
+    font-family: "Arial", sans-serif;
+    color: white;
+}
+
+.right {
+    float: right;
+    background-color: white;
+    background-image: url('../images/right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1024px;
+    width: 828px;
+    border: 0px solid transparent;
+}
+
+.left1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #A70404;
+    margin-top: 200px;
+    margin-left: 35px;
+
+}
+
+.left1 p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0px;
+    margin-left: 150px;
+}
+
+.left1 input[type=fn] {
+    width: 460px;
+    height: 50px;
+    border: 0px;
+    border: 1px solid #D1D1D1;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.left1 input[type=ea] {
+    width: 460px;
+    height: 50px;
+    border: 0px;
+    border: 1px solid #D1D1D1;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.spread Button {
+    height: 43.68px;
+    width: 160.62px;
+    border-radius: 20px;
+    background-color: #5D1C1C;
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 150px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.spread p {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: -20px;
+}

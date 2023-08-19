@@ -1,0 +1,92 @@
+.container {
+    background-color: #5D1C1C;
+    width: 1440px;
+    height: 1024px;
+}
+
+.con {
+    background-color: #5D1C1C;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    float: left;
+    background-color: #5D1C1C;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1024px;
+    width: 616px;
+    border: 0px solid transparent;
+}
+
+
+.left1 {
+    margin-left: 70px;
+    margin-top: 200px;
+}
+
+.above {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    width: 1440px;
+    height: 58.65px;
+}
+
+.above img {
+    width: 41px;
+    height: 41px;
+    margin-left: 10px;
+}
+
+.above h6 {
+    margin-right: 240px;
+    width: 1440px;
+    font-size: 35px;
+    font-family: "Inter", Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.left1 h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -170px;
+    margin-left: 0px;
+    font-family: "Inter", Inter;
+
+}
+
+.spread Button {
+    justify-content: space-between;
+    height: 43.99px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 670px;
+    margin-left: 200px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.spread1 Button {
+    height: 43.99px;
+    width: 664px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 0px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
