@@ -8,10 +8,7 @@ import Home from "../images/homeIcon.svg";
 import Logout from "../images/logoutIcon.png";
 import { Link, useLocation } from "react-router-dom";
 
-const handleSearch = (event) => {
-  //setSelectedValue(event.target.value);
-};
-function Validation() {
+function Maker() {
   const [isBurger, setIsBurger] = useState(false);
   const handleBurgerClick = () => {
     setIsBurger(!isBurger);
@@ -35,7 +32,7 @@ function Validation() {
       </div>
       <div className={styles.con}>
         <div>
-          <h1>VALIDATED ID RECORD</h1>
+          <h1>STUDENT'S RECORD</h1>
         </div>
         <div className={styles.actions}>
           <div className={styles.searchContainer}>
@@ -177,4 +174,4 @@ function Validation() {
   );
 }
 
-export default Validation;
+export default Maker;
