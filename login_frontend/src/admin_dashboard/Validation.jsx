@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-import styles from "./Request.module.css";
+import styles from "./Validation.module.css";
 import Logo from "../images/tupLogo.png";
 import Burger from "../images/burger.svg";
-import Search from "../images/searchIcon.svg";
 import Close from "../images/closeIcon.svg";
+import Search from "../images/searchIcon.svg";
 import Home from "../images/homeIcon.svg";
 import Logout from "../images/logoutIcon.png";
 import { Link, useLocation } from "react-router-dom";
 
-const handleSearch = (event) => {
-  //setSelectedValue(event.target.value);
-};
 function Validation() {
   const [isBurger, setIsBurger] = useState(false);
   const handleBurgerClick = () => {
@@ -35,7 +32,7 @@ function Validation() {
       </div>
       <div className={styles.con}>
         <div>
-          <h1>VALIDATED ID RECORD</h1>
+          <h1>STUDENT'S RECORD VALIDATION</h1>
         </div>
         <div className={styles.actions}>
           <div className={styles.searchContainer}>

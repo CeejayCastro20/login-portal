@@ -32,7 +32,7 @@ function Request() {
       </div>
       <div className={styles.con}>
         <div>
-          <h1>REQUESTED ID RECORD</h1>
+          <h1>STUDENT'S RECORD</h1>
         </div>
         <div className={styles.actions}>
           <div className={styles.searchContainer}>

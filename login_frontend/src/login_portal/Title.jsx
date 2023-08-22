@@ -16,6 +16,12 @@ const Title = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
   useEffect(() => {
     console.log("USERS:", USERS); //console logs users whenever USERS change value
   }, [USERS]);
@@ -162,7 +168,7 @@ const Title = () => {
                   <button type="submit">Log In</button>
 
                   <p>
-                    <a href="a">Forgot Password?</a>
+                    <a onClick={toggleModal}>Forgot Password?</a>
                   </p>
                   <hr className={styles.blackDivider} />
 
@@ -178,7 +184,7 @@ const Title = () => {
           ) : (
             <form onSubmit={handleRegisterSubmit}>
               <div className={styles.left1}>
-                <h2>ID VALIDATION REGISTRATION PORTAL</h2>
+                <h2>ID VALIDATION REGISTRATION</h2>
                 <hr className={styles.blackDivider} />
                 <p>User Registration</p>
                 <div className={styles.spread}>
@@ -240,6 +246,17 @@ const Title = () => {
           )}
         </div>
       </div>
+      {/* Modal */}
+      {showModal && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent}>
+            <h2>Forgot Password?</h2>
+            <div className={styles.modalDivider}/>
+            <p>Kindly reach out to the administrator for resolution.</p>
+            <button onClick={toggleModal}>Okay</button>
+          </div>
+        </div>
+      )}
 
       {/* <div className={styles.con}>
             <div className={styles.right}></div>
