@@ -15,9 +15,88 @@ function Validation() {
     console.log("burgerState", isBurger);
   };
 
-  const handleSearch = (event) => {
-    //setSelectedValue(event.target.value);
-  };
+
+const handleSearch = (event) => {
+  console.log("i am working!")
+  const table = document.getElementById("myTable");
+  const tbody = table.querySelector("tbody");
+  const rows = tbody.getElementsByTagName("tr");
+
+  for (const row of rows) {
+    const cells = row.getElementsByTagName("td");
+    const lastName = cells[0].textContent;
+    const firstName = cells[1].textContent;
+    const idNumber = cells[2].textContent;
+    const course = cells[3].textContent;
+    const date = cells[4].textContent;
+    const time = cells[5].textContent;
+
+    processData(lastName, firstName, idNumber, course, date, time);
+
+    function processData(lastName, firstName, idNumber, course, date, time) {
+        // Perform some operation on the data
+      console.log("Last Name:", lastName);
+      console.log("First Name:", firstName);
+      console.log("ID Number:", idNumber);
+      console.log("Course:", course);
+      console.log("Date:", date);
+      console.log("Time:", time);
+      }
+    }
+    /*function searchTable() {
+    var input, filter, tab, tr, td, i, txtValue;
+      input = document.getElementById("inputsearch");
+      filter = input.value.toUpperCase();
+      tab = document.getElementById("myTable");
+      tr = tab.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }   
+      } 
+      document.getElementById("inputsearch").addEventListener("input", searchTable);    
+    }*/
+  }
+
+        // Define a function to process table data
+        /*
+
+          // Iterate through the rows and extract data
+          
+
+              // Call your processing function with the extracted data
+              
+
+      // Define a function to process the extracted data
+      
+
+
+      function checkIfExists(item) {
+        return processData.includes(item);
+
+      // Function to handle the search button click
+      function handleSearchButtonClick() {
+          const itemToCheck = document.getElementById("itemInput").value;
+          const resultMessage = document.getElementById("resultMessage");
+
+          if (itemToCheck.trim() === "") {
+              resultMessage.textContent = "Please enter an item.";
+          } else if (checkIfExists(itemToCheck)) {
+              resultMessage.textContent = `${itemToCheck} already exists in the list.`;
+          } else {
+              resultMessage.textContent = `${itemToCheck} does not exist in the list.`;
+          }
+      }
+
+      // Event listener for the search button
+      document.getElementById("searchButton").addEventListener("click", handleSearchButtonClick);
+  };*/
 
   return (
     <div className={styles.container}>
@@ -38,6 +117,7 @@ function Validation() {
           <div className={styles.searchContainer}>
             <input type="search" className={styles.searchInput} />
             <button
+              id="inputsearch"
               type="submit"
               onClick={handleSearch}
               className={styles.searchButton}
@@ -55,7 +135,7 @@ function Validation() {
           </div>
         </div>
         <div>
-          <table className={styles.dataTable}>
+          <table id="myTable" className={styles.dataTable}>
             <thead>
               <tr>
                 <th>LAST NAME</th>
